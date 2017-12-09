@@ -1,0 +1,65 @@
+@import './reset.scss';
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* NAVBAR STYLES*/
+nav {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #4a4a4a;
+  color: #fafafa;
+  border-bottom: 5px solid #2a2a2a;
+  .homeButton {
+    padding: 3vh;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+      transition: 0.5s;
+      background: #7a7a7a;
+      transform: scale(1.05);
+    }
+  }
+  .navLinks {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        padding: 3vh;
+        text-shadow: 2;
+        &:hover {
+          transition: 0.5s;
+          background: #7a7a7a;
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+}
+
+.jumbotron {
+  height: 90vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('http://www.carmagazine.co.uk/Images/PageFiles/72398/Lotus-Elise-Sprint-05.jpg');
+  background-size: cover;
+  background-position: center;
+  h1 {
+    font-size: 50px;
+    color: white;
+    opacity: 0.7;
+  }
+}
